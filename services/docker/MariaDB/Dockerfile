@@ -8,7 +8,7 @@ FROM mariadb:${AGENT_VERSION_TAG}
 ###
 
 # Create tables for SmartTouch storage
-COPY Scripts/MariaDB_Init.sql /docker-entrypoint-initdb.db/
+COPY services/docker/MariaDB/Scripts/MariaDB_Init.sql /docker-entrypoint-initdb.db/
 
 ###
 # Set any optional or required environmental variables
