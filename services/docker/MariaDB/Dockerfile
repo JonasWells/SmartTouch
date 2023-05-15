@@ -1,7 +1,7 @@
 # Specify MariaDB version
 ARG AGENT_VERSION_TAG=latest
 # Set the Base Image for the Dockerfile
-FROM maridadb:${AGENT_VERSION_TAG}
+FROM mariadb:${AGENT_VERSION_TAG}
 
 ###
 # Do any tweaking or adjustments to Base Image
