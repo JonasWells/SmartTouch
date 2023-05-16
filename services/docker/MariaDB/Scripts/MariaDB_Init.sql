@@ -16,23 +16,6 @@ CREATE TABLE IF NOT EXISTS `changelog` (
 
 -- Data exporting was unselected.
 
--- Dumping structure for table smarttouch_db.recipe
-CREATE TABLE IF NOT EXISTS `recipe` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `recipeID` int(11) NOT NULL,
-  `paramID` int(11) NOT NULL,
-  `value` varchar(50) NOT NULL,
-  `lastEditBy` varchar(50) DEFAULT NULL,
-  `lastEditDate` datetime NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_paramID` (`paramID`),
-  KEY `FK_recipe_recipeID` (`recipeID`),
-  CONSTRAINT `FK_paramID` FOREIGN KEY (`paramID`) REFERENCES `recipe_paramdef` (`id`),
-  CONSTRAINT `FK_recipe_recipeID` FOREIGN KEY (`recipeID`) REFERENCES `recipedef` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Data exporting was unselected.
-
 -- Dumping structure for table smarttouch_db.recipedef
 CREATE TABLE IF NOT EXISTS `recipedef` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -104,6 +87,23 @@ CREATE TABLE IF NOT EXISTS `recipe_translations` (
   KEY `FK_translations_paramDef` (`paramID`),
   CONSTRAINT `FK_translations_paramDef` FOREIGN KEY (`paramID`) REFERENCES `recipe_paramdef` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+-- Data exporting was unselected.
+
+-- Dumping structure for table smarttouch_db.recipe
+CREATE TABLE IF NOT EXISTS `recipe` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `recipeID` int(11) NOT NULL,
+  `paramID` int(11) NOT NULL,
+  `value` varchar(50) NOT NULL,
+  `lastEditBy` varchar(50) DEFAULT NULL,
+  `lastEditDate` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_paramID` (`paramID`),
+  KEY `FK_recipe_recipeID` (`recipeID`),
+  CONSTRAINT `FK_paramID` FOREIGN KEY (`paramID`) REFERENCES `recipe_paramdef` (`id`),
+  CONSTRAINT `FK_recipe_recipeID` FOREIGN KEY (`recipeID`) REFERENCES `recipedef` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Data exporting was unselected.
 
