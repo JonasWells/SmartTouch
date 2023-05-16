@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  
+  ignition:
+    image: jwells96/ignition
+    restart: always
+    ports:
+      - 8088:8088
+      - 8043:8043
+    volumes:
+      - ignition_data:/var/lib/ignition/data
+    environment:
+      - GATEWAY_NETWORK_AUTOACCEPT_DELAY: 120
+      - TZ: America/Chicago
+
+  mariadb:
+    image: jwells96/mariadb
+    ports:
+      - 3306:3306
+    volumes:
+      - mariadb_data:/var/lib/mariadb
+
+volumes:
+  ignition_data:
+  mariadb_data:
