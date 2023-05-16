@@ -1,7 +1,7 @@
 # Specify MariaDB version
 ARG AGENT_VERSION_TAG=latest
 # Set the Base Image for the Dockerfile
-FROM kcollings/ignition:${AGENT_VERSION_TAG}
+FROM kcollins/ignition:${AGENT_VERSION_TAG}
 
 ###
 # Do any tweaking or adjustments to Base Image
