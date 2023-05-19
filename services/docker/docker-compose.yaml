@@ -10,9 +10,13 @@ services:
       - 8043:8043
     volumes:
       - ignition_data:/var/lib/ignition/data
+      - /path/to/files:/restore.gwbk
+      - /path/to/files:/modules
     environment:
       - GATEWAY_NETWORK_AUTOACCEPT_DELAY: 120
       - TZ: America/Chicago
+    networks:
+      - containers
 
   mariadb:
     image: jwells96/mariadb
@@ -20,7 +24,12 @@ services:
       - 3306:3306
     volumes:
       - mariadb_data:/var/lib/mariadb
+    networks:
+      - containers
 
 volumes:
   ignition_data:
   mariadb_data:
+
+networks:
+  containers:
