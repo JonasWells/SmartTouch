@@ -13,7 +13,7 @@ SmartTouch is a state-of-the-art Human-Machine Interface (HMI) available on Fort
 ## Getting Started
 - These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
-Prerequisites
+### Prerequisites
 You will need Docker and Docker Compose installed on your machine. If you don't have them installed, please refer to the official Docker documentation and Docker Compose documentation to install them.
 
 Installation and Setup
