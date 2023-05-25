@@ -18,22 +18,24 @@ You will need Docker and Docker Compose installed on your machine. If you don't 
 
 ### Installation and Setup
 Clone the repository to your local machine.
-bash
-Copy code
+```bash
 git clone https://github.com/username/smarttouch_docker.git
+```
 Navigate to the cloned repository.
-bash
-Copy code
+```bash
 cd smarttouch_docker
+```
 Build and start the Docker containers using Docker Compose.
-bash
-Copy code
+```bash
 docker-compose up --build
+```
 You should now be able to access the SmartTouch service on your local machine. The default port is 5000.
-Contributing
+
+## Contributing
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-License
-Usage of the project mu
+## Support
+For support, please contact PCMC directly at jonas.wells@pcmc.com.
 
-Please replace username with your actual GitHub username and update the URLs as necessary.
+## License
+This project is proprietary and confidential. It is not open-source. Please contact PCMC for more details.
