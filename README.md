@@ -1,16 +1,17 @@
+# SmartTouch
 This repository contains Docker images and a Docker Compose file for deploying the SmartTouch service by Paper Converting Machine Company (PCMC).
 
 SmartTouch is a state-of-the-art Human-Machine Interface (HMI) available on Forte tissue converting lines. This solution offers a clean, modern interface, enhanced help features, and smart analytic capabilities designed to provide valuable customer insights and enhance overall equipment effectiveness. It works much like today's mobile devices, providing an intuitive interface that reduces the learning curve and boosts productivity.
 
-Features
-Modern, user-friendly interface
-Enhanced help features
-Smart analytic capabilities
-IoT connectivity with industry 4.0 tools
-Optional cloud-based dashboards
-Production data storage and change logs
-Getting Started
-These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
+## Features
+- Modern, user-friendly interface
+- Enhanced help features
+- Smart analytic capabilities
+- IoT connectivity with industry 4.0 tools
+- Production data storage and change logs
+
+## Getting Started
+- These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
 Prerequisites
 You will need Docker and Docker Compose installed on your machine. If you don't have them installed, please refer to the official Docker documentation and Docker Compose documentation to install them.
